@@ -120,14 +120,31 @@ h1{
 
     <h1> FOR FOCUS </h1>
 
-    <p class="subtitle">I love you so much, my dear. You are the light of my life and the reason for my happiness.</p>
+    <p class="subtitle">ขอโทษสำหรับทุกอย่างนะที่รัก หวังว่าเราจะกลับมาคุยกันได้เหมือนเดิมนะ😢</p>
 
 
- <button class="btn" onclick="showVideo()"> Open this </button> <div id="popup" style=" display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; "> 
-    <div style="background:white;padding:20px;border-radius:15px;"> 
-    <video width="600" controls> <source src="Love you.mov" type="video/mp4"> </video> <br><br> <button onclick="closeVideo()">❌ ปิด</button> </div> </div> 
- <script> function showVideo(){ document.getElementById("popup").style.display = "flex"; } function closeVideo(){ document.getElementById("popup").style.display = "none"; } </script>
+<button class="btn" onclick="openVideo()">เปิดดูสิ</button>
 
+<div id="popup" style="display:none;">
+    <iframe
+  width="800"
+  height="450"
+  src="https://www.youtube.com/embed/p6Ge81dq_s8"
+  allowfullscreen>
+</iframe>
+
+  <button onclick="closeVideo()">ปิด</button>
+</div>
+
+<script>
+function openVideo() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closeVideo() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
 
 </body>
 </html>
